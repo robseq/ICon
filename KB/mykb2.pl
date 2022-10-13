@@ -1,0 +1,176 @@
+% RULES
+
+% La persona ha delle informazioni personali
+prop(X, has, personal_information):-
+    prop(X, has_age, A),
+    A=:=0,
+    prop(X, has_gender, G),
+    G=:=0,
+    prop(X, has_weight, W),
+    W=:=0;
+    prop(X, has_height, H),
+    H=:=0,
+    prop(X, has_fwo,  F),
+    F=:=0.
+
+% La persona ha un'età
+prop(X, has_age, A):-
+    prop(A, isOf, X),
+    prop(A, subClassOf, personal_information).
+
+% La persona ha un genere
+prop(X, has_gender, G):-
+    prop(G, isOf, X),
+    prop(G, subClassOf, personal_information).
+
+% La persona ha un peso
+prop(X, has_weight, W):-
+    prop(W, isOf, X),
+    prop(W, subClassOf, personal_information).
+
+% La persona ha un'altezza
+prop(X, has_height, H):-
+    prop(H, isOf, X),
+    prop(H, subClassOf, personal_information).
+
+% La persona ha una certa condizione familiare
+prop(X, has_fwo, F):-
+    prop(F, isOf, X),
+    prop(F, subClassOf, personal_information).
+
+
+% La persona ha un determinato stile di vita
+prop(X, has, lifestyle):-
+    prop(X, has_habits, eating_habits),
+    prop(X, has_phycond, physical_condition),
+    prop(X, has_bmi, bmi),
+    prop(X, has_obcond, obese_condition).
+
+% La persona ha una certa abitudine alimentare
+prop(X, has_habits, H):-
+    prop(H, type, X),
+    prop(H, subClassOf, lifestyle).
+
+% La persona ha una certa condizione fisica
+prop(X, has_phycond, P):-
+    prop(P, isOf, X),
+    prop(P, subClassOf, lifestyle).
+
+
+
+% Classe di obesità
+prop(X, is, obese):-
+    prop(X, has_bmi, B),
+    B>=30.
+prop(X, is, not_obese):-
+    prop(X, has_bmi, B),
+    B=<29.9.
+
+% Classi BMI
+prop(X, type, insufficient_weight):-
+    prop(X, has_bmi, M),
+    M=<18.5.
+prop(X, type, normal_weight):-
+    prop(X, has_bmi, M),
+    M>=18.5,
+    M=<24.9.
+prop(X, type, overweight):-
+    prop(X, has_bmi, M),
+    M>=25,
+    M=<29.9.
+prop(X, type, obesity_type_1):-
+    prop(X, has_bmi, M),
+    M>=30,
+    M=<34.
+prop(X, type, obesity_type_2):-
+    prop(X, has_bmi, M),
+    M>=35,
+    M=<39.9.
+prop(X, type, obesity_type_3):-
+    prop(X, has_bmi, M),
+    M>=40.
+
+
+% FATTI
+
+
+prop(mario_rossi, has_age, 26).
+prop(gaia_bianchi, has_age,21).
+prop(angelica_borraccino, has_age, 25).
+prop(christian_riefolo, has_age, 27).
+prop(cristina_miani, has_age,22).
+prop(ilaria_dicandia, has_age, 21).
+prop(luca_verdi, has_age,2 ).
+prop(mattia_biondi, has_age, 22).
+prop(nicole_marrone, has_age, 26).
+
+prop(mario_rossi, has_gender, male).
+prop(gaia_bianchi, has_gender, female).
+prop(angelica_borraccino, has_gender, female).
+prop(christian_riefolo, has_gender, male).
+prop(cristina_miani, has_gender, female).
+prop(ilaria_dicandia, has_gender, female).
+prop(luca_verdi, has_gender, male).
+prop(mattia_biondi, has_gender, male).
+prop(nicole_marrone, has_gender, female).
+
+prop(mario_rossi, has_bmi, 31).
+prop(gaia_bianchi, has_bmi, 24).
+prop(angelica_borraccino, has_bmi, 36).
+prop(christian_riefolo, has_bmi, 27).
+prop(cristina_miani, has_bmi, 17).
+prop(ilaria_dicandia, has_bmi, 27).
+prop(luca_verdi, has_bmi, 26).
+prop(mattia_biondi, has_bmi, 29).
+prop(nicole_marrone, has_bmi, 41).
+
+prop(mario_rossi, has_height, 1.85).
+prop(gaia_bianchi, has_height, 1.62).
+prop(angelica_borraccino, has_height, 1.63).
+prop(christian_riefolo, has_height, 1.93).
+prop(cristina_miani, has_height, 1.67).
+prop(ilaria_dicandia, has_height, 1.72).
+prop(luca_verdi, has_height, 1.80).
+prop(mattia_biondi, has_height, 1.65).
+prop(nicole_marrone, has_height, 1.66).
+
+prop(mario_rossi, has_weight, 105).
+prop(gaia_bianchi, has_weight, 64).
+prop(angelica_borraccino, has_weight, 73).
+prop(christian_riefolo, has_weight, 102).
+prop(cristina_miani, has_weight, 50).
+prop(ilaria_dicandia, has_weight, 80).
+prop(luca_verdi, has_weight, 87).
+prop(mattia_biondi, has_weight, 80).
+prop(nicole_marrone, has_weight, 112).
+
+prop(mario_rossi, has_fwo, false).
+prop(gaia_bianchi, has_fwo, true).
+prop(angelica_borraccino, has_fwo, false).
+prop(christian_riefolo, has_fwo, true).
+prop(cristina_miani, has_fwo, true).
+prop(ilaria_dicandia, has_fwo, true).
+prop(luca_verdi, has_fwo, false).
+prop(mattia_biondi, has_fwo, true).
+prop(nicole_marrone, has_fwo, true).
+
+prop(mario_rossi, has_habits, eating_habits_3).
+prop(gaia_bianchi, has_habits, eating_habits_1).
+prop(angelica_borraccino, has_habits, eating_habits_8).
+prop(christian_riefolo, has_habits, eating_habits_5).
+prop(cristina_miani, has_habits, eating_habits_7).
+prop(ilaria_dicandia, has_habits, eating_habits_4).
+prop(luca_verdi, has_habits, eating_habits_2).
+prop(mattia_biondi, has_habits, eating_habits_6).
+prop(nicole_marrone, has_habits, eating_habits_9).
+
+prop(mario_rossi, has_phycond, physical_condition_3).
+prop(gaia_bianchi, has_phycond, physical_condition_1).
+prop(angelica_borraccino, has_phycond, physical_condition_8).
+prop(christian_riefolo, has_phycond, physical_condition_5).
+prop(cristina_miani, has_phycond, physical_condition_7).
+prop(ilaria_dicandia, has_phycond, physical_condition_4).
+prop(luca_verdi, has_phycond, physical_condition_2).
+prop(mattia_biondi, has_phycond, physical_condition_6).
+prop(nicole_marrone, has_phycond, physical_condition_9).
+

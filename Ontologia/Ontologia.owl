@@ -1,0 +1,779 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#"
+     xml:base="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-25="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25">
+        <rdfs:comment>Questa ontologia rappresenta i dati relativi all&apos;obesità basata sullo stile di vita delle persone</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#hasEatingHabits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#hasEatingHabits">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#hasLifestyle"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#hasLifestyle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#hasLifestyle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Lifestyle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#isInBodyMassCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#isInBodyMassCondition">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#hasLifestyle"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#BodyMassCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#isInObeseCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#isInObeseCondition">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#hasLifestyle"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#ObeseCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#isInPhysicalActivityCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#isInPhysicalActivityCondition">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#hasLifestyle"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#consume_alcohol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#consume_alcohol">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#consume_b_meals -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#consume_b_meals">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#count_daily_cal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#count_daily_cal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#daily_water -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#daily_water">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#family_overweight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#family_overweight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#freq_consume_cal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#freq_consume_cal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#freq_consume_veg -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#freq_consume_veg">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#freq_daily_activity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#freq_daily_activity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#freq_screen_time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#freq_screen_time">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#height">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#n_daily_meals -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#n_daily_meals">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#smoke -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#smoke">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#transportation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#transportation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#weight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#BodyMassCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#BodyMassCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Lifestyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Lifestyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Lifestyle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Lifestyle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#ObeseCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#ObeseCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Lifestyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Lifestyle"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Angelica_Borraccino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Angelica_Borraccino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <hasEatingHabits rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_8"/>
+        <isInBodyMassCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#obesity_type_II"/>
+        <isInObeseCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#obese"/>
+        <isInPhysicalActivityCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_8"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">25</age>
+        <family_overweight rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</family_overweight>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</gender>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.63</height>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">93.0</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Christian_Riefolo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Christian_Riefolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <hasEatingHabits rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_5"/>
+        <isInBodyMassCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#overweight_level_II"/>
+        <isInObeseCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#not_obese"/>
+        <isInPhysicalActivityCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_5"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">27</age>
+        <family_overweight rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</family_overweight>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</gender>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.93</height>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">102.0</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Cristina_Miani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Cristina_Miani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <hasEatingHabits rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_7"/>
+        <isInBodyMassCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#insufficient_weight"/>
+        <isInObeseCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#not_obese"/>
+        <isInPhysicalActivityCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_7"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">22</age>
+        <family_overweight rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</family_overweight>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</gender>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.67</height>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Gaia_Bianchi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Gaia_Bianchi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <hasEatingHabits rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_1"/>
+        <isInBodyMassCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#normal_weight"/>
+        <isInObeseCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#not_obese"/>
+        <isInPhysicalActivityCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_1"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">21</age>
+        <family_overweight rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</family_overweight>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</gender>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.62</height>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">64.0</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Ilaria_Dicandia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Ilaria_Dicandia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <hasEatingHabits rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_4"/>
+        <isInBodyMassCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#overweight_level_II"/>
+        <isInObeseCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#not_obese"/>
+        <isInPhysicalActivityCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_4"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">21</age>
+        <family_overweight rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</family_overweight>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</gender>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.72</height>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">80.0</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Luca_Verdi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Luca_Verdi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <hasEatingHabits rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_2"/>
+        <isInBodyMassCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#overweight_level_I"/>
+        <isInObeseCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#not_obese"/>
+        <isInPhysicalActivityCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_2"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">27</age>
+        <family_overweight rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</family_overweight>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</gender>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.8</height>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">87.0</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Mario_Rossi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Mario_Rossi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <hasEatingHabits rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_3"/>
+        <isInBodyMassCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#obesity_type_I"/>
+        <isInObeseCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#obese"/>
+        <isInPhysicalActivityCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_3"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">26</age>
+        <family_overweight rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</family_overweight>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</gender>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.85</height>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">105.0</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Mattia_Biondi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Mattia_Biondi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <hasEatingHabits rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_6"/>
+        <isInBodyMassCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#overweight_level_II"/>
+        <isInObeseCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#not_obese"/>
+        <isInPhysicalActivityCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_6"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">22</age>
+        <family_overweight rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</family_overweight>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</gender>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.65</height>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">80.0</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Nicole_Marrone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Nicole_Marrone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#Person"/>
+        <hasEatingHabits rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_9"/>
+        <isInBodyMassCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#obesity_type_III"/>
+        <isInObeseCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#obese"/>
+        <isInPhysicalActivityCondition rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_9"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">26</age>
+        <family_overweight rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</family_overweight>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</gender>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.66</height>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">112.0</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <consume_alcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</consume_alcohol>
+        <consume_b_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sometimes</consume_b_meals>
+        <daily_water rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</daily_water>
+        <freq_consume_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freq_consume_cal>
+        <freq_consume_veg rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</freq_consume_veg>
+        <n_daily_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</n_daily_meals>
+        <smoke rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</smoke>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <consume_alcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">frequently</consume_alcohol>
+        <consume_b_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sometimes</consume_b_meals>
+        <daily_water rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</daily_water>
+        <freq_consume_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freq_consume_cal>
+        <freq_consume_veg rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</freq_consume_veg>
+        <n_daily_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</n_daily_meals>
+        <smoke rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</smoke>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <consume_alcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sometimes</consume_alcohol>
+        <consume_b_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">frequently</consume_b_meals>
+        <daily_water rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</daily_water>
+        <freq_consume_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freq_consume_cal>
+        <freq_consume_veg rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</freq_consume_veg>
+        <n_daily_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</n_daily_meals>
+        <smoke rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</smoke>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <consume_alcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sometimes</consume_alcohol>
+        <consume_b_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">frequently</consume_b_meals>
+        <daily_water rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</daily_water>
+        <freq_consume_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freq_consume_cal>
+        <freq_consume_veg rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</freq_consume_veg>
+        <n_daily_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</n_daily_meals>
+        <smoke rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</smoke>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <consume_alcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sometimes</consume_alcohol>
+        <consume_b_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sometimes</consume_b_meals>
+        <daily_water rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</daily_water>
+        <freq_consume_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freq_consume_cal>
+        <freq_consume_veg rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</freq_consume_veg>
+        <n_daily_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</n_daily_meals>
+        <smoke rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</smoke>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <consume_alcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</consume_alcohol>
+        <consume_b_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sometimes</consume_b_meals>
+        <daily_water rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</daily_water>
+        <freq_consume_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freq_consume_cal>
+        <freq_consume_veg rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</freq_consume_veg>
+        <n_daily_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</n_daily_meals>
+        <smoke rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</smoke>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <consume_alcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sometimes</consume_alcohol>
+        <consume_b_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</consume_b_meals>
+        <daily_water rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</daily_water>
+        <freq_consume_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freq_consume_cal>
+        <freq_consume_veg rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</freq_consume_veg>
+        <n_daily_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</n_daily_meals>
+        <smoke rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</smoke>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <consume_alcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</consume_alcohol>
+        <consume_b_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">always</consume_b_meals>
+        <daily_water rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</daily_water>
+        <freq_consume_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freq_consume_cal>
+        <freq_consume_veg rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</freq_consume_veg>
+        <n_daily_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</n_daily_meals>
+        <smoke rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</smoke>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#eating_habits_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#EatingHabits"/>
+        <consume_alcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</consume_alcohol>
+        <consume_b_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#string">someting</consume_b_meals>
+        <daily_water rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</daily_water>
+        <freq_consume_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freq_consume_cal>
+        <freq_consume_veg rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</freq_consume_veg>
+        <n_daily_meals rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</n_daily_meals>
+        <smoke rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</smoke>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#female -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#female"/>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#insufficient_weight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#insufficient_weight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#BodyMassCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#male -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#male"/>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#normal_weight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#normal_weight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#BodyMassCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#not_obese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#not_obese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#ObeseCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#obese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#obese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#ObeseCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#obesity_type_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#obesity_type_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#BodyMassCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#obesity_type_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#obesity_type_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#BodyMassCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#obesity_type_III -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#obesity_type_III">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#BodyMassCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#overweight_level_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#overweight_level_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#BodyMassCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#overweight_level_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#overweight_level_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#BodyMassCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition"/>
+        <count_daily_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</count_daily_cal>
+        <freq_daily_activity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</freq_daily_activity>
+        <freq_screen_time rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</freq_screen_time>
+        <transportation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">public_transportation</transportation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition"/>
+        <count_daily_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</count_daily_cal>
+        <freq_daily_activity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</freq_daily_activity>
+        <freq_screen_time rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</freq_screen_time>
+        <transportation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">walking</transportation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition"/>
+        <count_daily_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</count_daily_cal>
+        <freq_daily_activity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</freq_daily_activity>
+        <freq_screen_time rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</freq_screen_time>
+        <transportation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">public_transport</transportation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition"/>
+        <count_daily_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</count_daily_cal>
+        <freq_daily_activity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</freq_daily_activity>
+        <freq_screen_time rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</freq_screen_time>
+        <transportation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">public_transport</transportation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition"/>
+        <count_daily_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</count_daily_cal>
+        <freq_daily_activity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</freq_daily_activity>
+        <freq_screen_time rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</freq_screen_time>
+        <transportation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">public_transport</transportation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition"/>
+        <count_daily_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</count_daily_cal>
+        <freq_daily_activity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</freq_daily_activity>
+        <freq_screen_time rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</freq_screen_time>
+        <transportation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">walking</transportation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition"/>
+        <count_daily_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</count_daily_cal>
+        <freq_daily_activity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</freq_daily_activity>
+        <freq_screen_time rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</freq_screen_time>
+        <transportation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">public_transport</transportation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition"/>
+        <count_daily_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</count_daily_cal>
+        <freq_daily_activity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</freq_daily_activity>
+        <freq_screen_time rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</freq_screen_time>
+        <transportation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automobile</transportation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#physical_condition_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/principale/ontologies/2022/8/untitled-ontology-25#PhysicalActivityCondition"/>
+        <count_daily_cal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</count_daily_cal>
+        <freq_daily_activity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</freq_daily_activity>
+        <freq_screen_time rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">0</freq_screen_time>
+        <transportation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automobile</transportation>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
